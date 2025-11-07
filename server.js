@@ -20,12 +20,12 @@ app.locals.pedidos = [];
 app.locals.mesas = [];
 
 // rotas
-// const cardapioRoutes = require('./routes/cardapio');
+const cardapioRoutes = require('./routes/cardapio');
 // const pedidosRoutes = require('./routes/pedidos');
 // const mesasRoutes = require('./routes/mesas');
 // const cozinhaRoutes = require('./routes/cozinha');
 
-// app.use('/cardapio', cardapioRoutes);
+app.use('/cardapio', cardapioRoutes);
 // app.use('/pedidos', pedidosRoutes);
 // app.use('/mesas', mesasRoutes);
 // app.use('/cozinha', cozinhaRoutes);

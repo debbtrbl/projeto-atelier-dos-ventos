@@ -1,0 +1,42 @@
+<div class="detail-container">
+  <div class="detail-header">
+
+    <h1>{{prato.nome}}</h1>
+  </div>
+
+  <div class="detail-content">
+    <div class="info-card">
+      <div class="detail-item">
+        <strong>ID:</strong>
+        <span>#{{prato.id}}</span>
+      </div>
+      <div class="detail-item">
+        <strong>Descrição:</strong>
+        <p class="description">{{prato.descricao}}</p>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail-item">
+          <strong>Preço:</strong>
+          <span>R$ {{prato.preco}}</span>
+        </div>
+
+        <div class="detail-item">
+          <strong>Categoria:</strong>
+          <span>{{prato.categoria}}</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <a href="/cardapio" class="btn-voltar">Voltar</a>
+      <a href="/cardapio/{{prato.id}}/editar" class="btn-edit">Editar</a>
+      <form action="/cardapio/{{prato.id}}/excluir" method="POST" class="form-excluir">
+        <button type="submit" class="btn-delete" onclick="return confirm('Tem certeza?')">
+          Excluir
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

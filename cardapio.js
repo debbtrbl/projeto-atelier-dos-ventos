@@ -1,5 +1,5 @@
 module.exports = [
-  { id: 1, categoria: "sopa", nome: "Sopa Cidade Quente", descricao: "legumes e batata", preco: 18.9 },
+  { id: 1, categoria: "sopa", nome: "Sopa Cidade Quente", descricao: "legumes e batata", preco: 18.9, imagem: "https://via.placeholder.com/300x200/2c5530/ffffff?text=Sopa"},
   { id: 2, categoria: "sopa", nome: "Sopa Final de Tarde", descricao: "tomate com manjericão", preco: 19.5 },
   { id: 3, categoria: "sopa", nome: "Caldo Dia Claro", descricao: "frango e cenoura", preco: 17.9 },
   { id: 4, categoria: "sopa", nome: "Sopa Meia Estacao", descricao: "abóbora cremosa", preco: 18.5 },

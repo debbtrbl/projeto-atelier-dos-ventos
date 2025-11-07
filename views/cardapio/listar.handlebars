@@ -1,0 +1,21 @@
+<h2>Cardápio</h2>
+<div class="add-dish-container">
+  <a href="/cardapio/novo"><button class="btn-add-dish" id="btnAddDish">+ Adicionar Novo Prato</button></a>
+</div>
+<div class="cardapio-grid">
+  {{#each cardapio}}
+    <div class="food-card">
+      <div class="card-content">
+        <h3>{{nome}}</h3>
+        <p class="card-descricao">{{descricao}}</p>
+        
+        <div class="card-details">
+          <span class="card-preco">R$ {{preco}}</span>
+          <span class="card-categoria {{categoria}}">{{categoria}}</span>
+        </div>
+
+        <a href="/cardapio/{{id}}"><button class="btn-pedir">Ver detalhes</button></a>
+      </div>
+    </div>
+  {{/each}}
+</div>
